@@ -1,31 +1,13 @@
 <script>
-import Student from "./components/Student.vue"
+import Navbar from "./components/Navbar.vue"
 export default {
   components: {
-    Student
-  },
-  data() {
-    return {
-      selectStudent: ''
-    }
-  },
-  methods: {
-    Showdata(a) {
-      this.selectStudent = a
-    }
+    Navbar
   }
 }
 </script>
-
 <template>
-  <Student @response="Showdata" name="anii">nilai slot</Student>
-  <br>
-  <Student @response="Showdata" name="ria" />
-  <br>
-  <Student @response="Showdata" name="k" />
+  <Navbar></Navbar>
 
-  <br>
-  <p>
-    yang dipilih adalah {{ selectStudent }}
-  </p>
+  <router-view></router-view>
 </template>

@@ -1,0 +1,3 @@
+<template>
+    halaman about
+</template>
